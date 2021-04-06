@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>DEMO</title>
+<style>
+input[type="file"] {
+  width: 300px;
+  height: 68px;
+  background-color: transparent;
+  cursor: pointer;
+}
+/* for Safari, Chrome */
+input[type="file"]::-webkit-file-selector-button {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border: 3px solid #000;
+  background-color: #fff;
+  border-radius: 8px;
+}
+input[type="file"]::-webkit-file-upload-button:hover {
+  background-color: #E0F0FF;
+}
+/* for Firefox, Chrome */
+input[type="file"]::file-selector-button {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border: 5px solid #000;
+  background-color: #fff;
+  border-radius: 8px;
+}
+input[type="file"]::file-selector-button:hover {
+  background-color: #E0F0FF;
+}
+/* for IE */
+input[type="file"]::-ms-browse {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border: 3px solid #000;
+  background-color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+input[type="file"]::-ms-browse:hover {
+  background: #E0F0FF;
+}
+input[type="file"]::-ms-value {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<input type="file">
+
+</body>
+</html>
