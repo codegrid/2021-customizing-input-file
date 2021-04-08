@@ -48,17 +48,19 @@ const app = createApp({
   },
 
   methods: {
-    onChangeFiles(ev) {
+    onChangeFiles({ currentTarget: { files } }) {
       try {
-        this.selectFiles(ev.currentTarget.files);
+        this.selectFiles(files);
       } catch (err) {
         console.error(err);
         alert(err.message);
       }
+      console.log(`${files.length}ファイルを選択しました`);
     },
 
     onClickDeleteFile(file) {
       this.deleteFile(file);
+      console.log(`${file.name}を削除しました`);
     },
 
     async onClickUpload() {
@@ -119,4 +121,4 @@ const app = createApp({
   `
 });
 
-app.mount("#form");
+app.mount("#app");
