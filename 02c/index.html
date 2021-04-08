@@ -3,42 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
-<title>DEMO</title>
+<title>Input type=file vue demo</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<div id="form"></div>
 
-<form class="Form" action="" method="POST">
-
-  <h1 class="Form_Title">画像をアップロードする</h1>
-
-  <p class="Form_Description">最大3つまでの画像（PNG・JPG形式）が選択できます。</p>
-
-  <label class="UploadButton">
-    <input class="UploadButton_Input" type="file" accept="image/png, image/jpeg" multiple required>
-    <span class="UploadButton_Text">画像を選択する</span>
-  </label>
-
-  <ul class="FileList">
-    <li class="FileList_Item">
-      <img class="FileList_Img" src="https://dummyimage.com/400x300/000/fff">
-      <span class="FileList_Name">ファイル名.png</span>
-      <span class="FileList_Size">100KB</span>
-      <button class="FileList_DeleteButton" type="button">削除</button>
-    </li>
-    <li class="FileList_Item">
-      <img class="FileList_Img" src="https://dummyimage.com/300x300/000/fff">
-      <span class="FileList_Name">ファイル名.png</span>
-      <span class="FileList_Size">100KB</span>
-      <button class="FileList_DeleteButton" type="button">削除</button>
-    </li>
-  </ul>
-
-  <button class="SubmitButton" type="submit">アップロードする</button>
-
-</form>
-
+<script src="https://unpkg.com/vue@next"></script>
+<script src="main.js"></script>
 
 </body>
 </html>
